@@ -29,3 +29,28 @@ RAG fails quietly, so I insist on measuring it. This is policy-assistant, a smal
 ## Scene 5 — Close (2:15–2:33) · Screen: github.com/henfredpietersen profile
 
 I'm looking for applied AI, solutions or implementation roles, remote in South Africa or internationally, where shipping with AI tools is how the work gets done. Links to my products and GitHub are below. Thanks for watching.
+
+---
+
+<a id="brief-writer-demo"></a>
+# Narration: WordPress Content Brief Writer (1:29)
+
+Same voice clone, same rule: the script and the work are mine.
+
+**Add a topic** · Screen: Google Sheet
+This is my WordPress Content Brief Writer, the project closest to the work on your roadmap. A content team adds topics to a Google Sheet. Here I'm adding one: storing coffee beans.
+
+**Run the agent** · Screen: Brief agent menu, script running
+One menu click sends every new row to my live agent. It's a LangGraph workflow: it searches the WordPress site through its REST API, decides which posts to read, and then writes the brief.
+
+**Result** · Screen: the filled-in row
+About a minute later, the row is filled in: done, a link to the Google Doc, grounded yes, how many posts it read, and which model ran.
+
+**The brief** · Screen: the Google Doc
+Here's the brief. A working title and an angle. An outline. The existing posts to link, the facts the site already states, and the gaps the new article should fill. The agent may only cite pages it actually read. A check at the end enforces that, and the Doc lists exactly what it read.
+
+**Live API** · Screen: wp-brief-agent.onrender.com/docs
+Behind the Sheet is a FastAPI service on Render, with token-protected live routes, streaming, and an hourly cap. It runs on Groq with tool calling, and the same graph supports the Anthropic API.
+
+**Code** · Screen: the GitHub repository
+I designed it, directed Claude to write the code, reviewed it, and shipped it, with tests running on every push. The code and the live evaluation results are on GitHub. Thanks for watching.
